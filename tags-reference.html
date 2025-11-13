@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Reference - HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>HTML Cheat Sheet</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fundamentals.html">Fundamentals</a></li>
+                <li><a href="tags-reference.html" class="active">Tags Reference</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://tse3.mm.bing.net/th/id/OIP.JC-H_3MXAxMwjhGUm69blQHaD4?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; position: relative;">
+            <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; text-shadow: 0 4px 8px rgba(0,0,0,0.7); z-index: 2;">HTML Tags Reference</h2>
+            <p style="font-size: 1.2rem; font-weight: 500; text-shadow: 0 2px 4px rgba(0,0,0,0.7); max-width: 500px; z-index: 2;">Complete reference of HTML tags with descriptions and examples.</p>
+        </section>
+
+        <!-- Section Navigation -->
+        <div class="section-navigation">
+            <h3>Quick Navigation</h3>
+            <div class="nav-buttons">
+                <a href="#document-structure" class="nav-btn">Document Structure</a>
+                <a href="#text-formatting" class="nav-btn">Text Formatting</a>
+                <a href="#list-tags" class="nav-btn">List Tags</a>
+                <a href="#link-media" class="nav-btn">Links & Media</a>
+                <a href="#container-tags" class="nav-btn">Container Tags</a>
+            </div>
+        </div>
+
+        <section class="content">
+            <h3 id="document-structure">Document Structure Tags</h3>
+            <div class="tags-grid">
+                <div class="tag-card">
+                    <h4>&lt;!DOCTYPE html&gt;</h4>
+                    <p class="tag-description">Declares the document type and version of HTML</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;html&gt;</h4>
+                    <p class="tag-description">Root element of an HTML document</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;html lang="en"&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;head&gt;</h4>
+                    <p class="tag-description">Contains metadata about the document</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;body&gt;</h4>
+                    <p class="tag-description">Contains the visible content of the document</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;body&gt;
+    &lt;h1&gt;Visible content&lt;/h1&gt;
+&lt;/body&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="text-formatting">Text Formatting Tags</h3>
+            <div class="tags-grid">
+                <div class="tag-card">
+                    <h4>&lt;h1&gt; to &lt;h6&gt;</h4>
+                    <p class="tag-description">Heading elements (h1 is largest, h6 is smallest)</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Section Heading&lt;/h2&gt;
+&lt;h3&gt;Subsection&lt;/h3&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo" style="display: block; text-align: left;">
+                            <h1 style="margin: 0 0 0.5rem 0; font-size: 2rem; font-weight: bold; color: #333;">Main Heading</h1>
+                            <h2 style="margin: 0 0 0.5rem 0; font-size: 1.5rem; font-weight: bold; color: #333;">Section Heading</h2>
+                            <h3 style="margin: 0; font-size: 1.25rem; font-weight: bold; color: #333;">Subsection</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;p&gt;</h4>
+                    <p class="tag-description">Paragraph of text</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <p style="margin: 0; color: #555; line-height: 1.6;">This is a paragraph.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;strong&gt;</h4>
+                    <p class="tag-description">Important text (usually bold)</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;strong&gt;Important text&lt;/strong&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <strong style="color: #333;">Important text</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;em&gt;</h4>
+                    <p class="tag-description">Emphasized text (usually italic)</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;em&gt;Emphasized text&lt;/em&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <em style="color: #333;">Emphasized text</em>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;br&gt;</h4>
+                    <p class="tag-description">Line break (self-closing)</p>
+                    <div class="tag-example">
+                        <pre><code>First line&lt;br&gt;
+Second line</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <span style="color: #555;">First line<br>Second line</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;hr&gt;</h4>
+                    <p class="tag-description">Horizontal rule/line (self-closing)</p>
+                    <div class="tag-example">
+                        <pre><code>Content above
+&lt;hr&gt;
+Content below</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo" style="display: block; text-align: left;">
+                            <div style="color: #555; margin-bottom: 0.75rem;">Content above</div>
+                            <hr style="border: none; border-top: 2px solid #ddd; margin: 0.75rem 0; width: 100%;">
+                            <div style="color: #555; margin-top: 0.75rem;">Content below</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="list-tags">List Tags</h3>
+            <div class="tags-grid">
+                <div class="tag-card">
+                    <h4>&lt;ul&gt;</h4>
+                    <p class="tag-description">Unordered (bulleted) list</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <ul style="margin: 0; padding-left: 1.5rem; color: #555;">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;ol&gt;</h4>
+                    <p class="tag-description">Ordered (numbered) list</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <ol style="margin: 0; padding-left: 1.5rem; color: #555;">
+                                <li>First item</li>
+                                <li>Second item</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;li&gt;</h4>
+                    <p class="tag-description">List item</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;li&gt;List item content&lt;/li&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <ul style="margin: 0; padding-left: 1.5rem; color: #555; list-style: none;">
+                                <li style="position: relative; padding-left: 0;">• List item content</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;dl&gt;</h4>
+                    <p class="tag-description">Description list</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+    
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo" style="display: block; text-align: left;">
+                            <dl style="margin: 0; color: #555;">
+                                <dt style="font-weight: bold; margin-bottom: 0.25rem; color: #333;">HTML</dt>
+                                <dd style="margin: 0 0 1rem 1rem; color: #666;">HyperText Markup Language</dd>
+                                <dt style="font-weight: bold; margin-bottom: 0.25rem; color: #333;">CSS</dt>
+                                <dd style="margin: 0 0 0.5rem 1rem; color: #666;">Cascading Style Sheets</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="link-media">Link and Media Tags</h3>
+            <div class="tags-grid">
+                <div class="tag-card">
+                    <h4>&lt;a&gt;</h4>
+                    <p class="tag-description">Anchor/link element</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;a href="https://example.com"&gt;Link text&lt;/a&gt;
+&lt;a href="mailto:email@example.com"&gt;Email&lt;/a&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <a href="#" style="color: #0066cc; text-decoration: underline; margin-right: 1rem;" onclick="return false;">Link text</a>
+                            <a href="#" style="color: #0066cc; text-decoration: underline;" onclick="return false;">Email</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;img&gt;</h4>
+                    <p class="tag-description">Image element (self-closing)</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <div style="width: 120px; height: 80px; background: linear-gradient(45deg, #667eea, #764ba2); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; text-align: center; border: 1px solid #ddd;">Image Placeholder</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;video&gt;</h4>
+                    <p class="tag-description">Video content</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;video controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <div style="width: 160px; height: 90px; background: #1a1a1a; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; text-align: center; border: 1px solid #333; position: relative;">
+                                🎥 Video Player
+                                <div style="position: absolute; bottom: 5px; left: 5px; right: 5px; height: 4px; background: #333; border-radius: 2px;">
+                                    <div style="height: 100%; width: 30%; background: #ff6b6b; border-radius: 2px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;audio&gt;</h4>
+                    <p class="tag-description">Audio content</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <div style="width: 140px; height: 40px; background: #f5f5f5; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.8rem; text-align: center; border: 1px solid #ddd; position: relative;">
+                                🎵 Audio Player
+                                <div style="position: absolute; bottom: 8px; left: 10px; right: 10px; height: 2px; background: #ddd; border-radius: 1px;">
+                                    <div style="height: 100%; width: 45%; background: #667eea; border-radius: 1px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="container-tags">Container Tags</h3>
+            <div class="tags-grid">
+                <div class="tag-card">
+                    <h4>&lt;div&gt;</h4>
+                    <p class="tag-description">Generic block container</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;div class="container"&gt;
+    Content here
+&lt;/div&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <div style="padding: 1rem; background: #f0f8ff; border: 1px dashed #667eea; border-radius: 6px; color: #555;">Content here</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;span&gt;</h4>
+                    <p class="tag-description">Generic inline container</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;p&gt;This is normal text with 
+&lt;span class="highlight"&gt;highlighted text&lt;/span&gt; inside.&lt;/p&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo" style="display: block; text-align: left;">
+                            <p style="margin: 0; color: #555; line-height: 1.6;">This is normal text with <span style="background: #ffff00; color: #333; padding: 0.2rem 0.4rem; border-radius: 3px;">highlighted text</span> inside.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;header&gt;</h4>
+                    <p class="tag-description">Header section of a page or section</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;nav&gt;Home | About | Contact&lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo" style="display: block; text-align: left;">
+                            <header style="background: linear-gradient(135deg, #7c9885, #8db4d3); color: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 1px solid rgba(255,255,255,0.1); max-width: 100%; overflow: hidden;">
+                                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                                    <h1 style="margin: 0; font-size: 1.5rem; font-weight: 800; text-shadow: 0 2px 4px rgba(0,0,0,0.2); text-align: center;">My Website</h1>
+                                    <nav style="display: flex; justify-content: center; flex-wrap: wrap; gap: 0.75rem; font-weight: 500; font-size: 0.9rem;">
+                                        <a href="#" style="color: white; text-decoration: none; padding: 0.4rem 0.8rem; border-radius: 6px; transition: background 0.3s; background: rgba(255,255,255,0.1); white-space: nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">Home</a>
+                                        <a href="#" style="color: white; text-decoration: none; padding: 0.4rem 0.8rem; border-radius: 6px; transition: background 0.3s; background: rgba(255,255,255,0.1); white-space: nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">About</a>
+                                        <a href="#" style="color: white; text-decoration: none; padding: 0.4rem 0.8rem; border-radius: 6px; transition: background 0.3s; background: rgba(255,255,255,0.1); white-space: nowrap;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">Contact</a>
+                                    </nav>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;main&gt;</h4>
+                    <p class="tag-description">Main content area</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;main&gt;
+    &lt;article&gt;Main content&lt;/article&gt;
+&lt;/main&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <main style="background: white; padding: 1.5rem; border: 1px solid #e0e0e0; border-radius: 0;">
+                                <article style="color: #555; font-size: 0.95rem;">Main content</article>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;footer&gt;</h4>
+                    <p class="tag-description">Footer section</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;footer&gt;
+    &lt;p&gt;Copyright information&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <footer style="background: #6c757d; color: white; padding: 1rem; border-radius: 0 0 8px 8px; text-align: center;">
+                                <p style="margin: 0; font-size: 0.9rem;">Copyright information</p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tag-card">
+                    <h4>&lt;section&gt;</h4>
+                    <p class="tag-description">Thematic section of content</p>
+                    <div class="tag-example">
+                        <pre><code>&lt;section&gt;
+    &lt;h2&gt;Section Title&lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+                    </div>
+                    <div class="tag-output">
+                        <div class="output-label">Output:</div>
+                        <div class="output-demo">
+                            <section style="background: #f8f9fa; padding: 1.2rem; border-left: 4px solid #667eea; border-radius: 0 8px 8px 0;">
+                                <h2 style="margin: 0; color: #333; font-size: 1.1rem; font-weight: 600;">Section Title</h2>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="next-section-container">
+            <a href="examples.html" class="next-section">
+                See HTML Examples in Action
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HTML Cheat Sheet. Educational resource for web developers.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        Back to Top
+    </button>
+
+    <script>
+        // Back to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

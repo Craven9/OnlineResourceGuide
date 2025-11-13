@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet - Your Complete Reference</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>HTML Cheat Sheet</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fundamentals.html">Fundamentals</a></li>
+                <li><a href="tags-reference.html">Tags Reference</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero home-hero">
+            <h2>HTML Cheat Sheet</h2>
+            <p>Your complete reference guide for HTML tags, syntax, and best practices.</p>
+            <a href="fundamentals.html" class="cta-button">Start Learning</a>
+        </section>
+
+        <section class="content">
+            <h3>What is HTML?</h3>
+            <p><strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. It describes the structure of web pages using markup tags.</p>
+            
+            <h3>Quick Start</h3>
+            <div class="code-example">
+                <h4>Basic HTML Document Structure:</h4>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <h3>Navigation Guide</h3>
+            <ul class="nav-guide">
+                <li>
+                    <div class="nav-guide-content">
+                        <strong>Fundamentals:</strong> Learn HTML document structure and basic syntax
+                        <a href="fundamentals.html" class="nav-guide-btn">View</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-guide-content">
+                        <strong>Tags Reference:</strong> Complete list of HTML tags with descriptions
+                        <a href="tags-reference.html" class="nav-guide-btn">View</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-guide-content">
+                        <strong>Examples:</strong> Practical code examples and implementations
+                        <a href="examples.html" class="nav-guide-btn">View</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-guide-content">
+                        <strong>Resources:</strong> Additional learning materials and tools
+                        <a href="resources.html" class="nav-guide-btn">View</a>
+                    </div>
+                </li>
+            </ul>
+
+            <h3>Key HTML Concepts</h3>
+            <div class="concepts-grid">
+                <div class="concept">
+                    <h4>Elements & Tags</h4>
+                    <p>HTML uses tags to define elements like headings, paragraphs, and links.</p>
+                </div>
+                <div class="concept">
+                    <h4>Attributes</h4>
+                    <p>Tags can have attributes that provide additional information about elements.</p>
+                </div>
+                <div class="concept">
+                    <h4>Semantic HTML</h4>
+                    <p>Use meaningful tags that describe the content's purpose, not just appearance.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="next-section-container">
+            <a href="fundamentals.html" class="next-section">
+                Start Learning HTML Fundamentals
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HTML Cheat Sheet. Educational resource for web developers.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        Back to Top
+    </button>
+
+    <script>
+        // Back to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
