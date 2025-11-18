@@ -1,0 +1,33 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/fundamentals",
+      "destination": "/fundamentals.html"
+    },
+    {
+      "source": "/tags-reference",
+      "destination": "/tags-reference.html"
+    },
+    {
+      "source": "/examples",
+      "destination": "/examples.html"
+    },
+    {
+      "source": "/resources",
+      "destination": "/resources.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=3600"
+        }
+      ]
+    }
+  ]
+}
