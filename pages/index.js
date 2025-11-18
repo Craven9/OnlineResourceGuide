@@ -16,7 +16,7 @@ export default function Home() {
         <a href="/examples">Examples</a> | 
         <a href="/resources">Resources</a>
       </nav>
-      <p>Welcome to the HTML Cheat Sheet. This is now a Next.js application.</p>
+      <p>Welcome to the HTML Cheat Sheet.</p>
     </div>
   );
 }
