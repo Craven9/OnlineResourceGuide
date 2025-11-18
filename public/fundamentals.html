@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Fundamentals - HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>HTML Cheat Sheet</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fundamentals.html" class="active">Fundamentals</a></li>
+                <li><a href="tags-reference.html">Tags Reference</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://www.alphaacademy.org/wp-content/uploads/2021/08/HTML-5-Fundamentals.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 500px; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; text-align: center; color: white; padding-bottom: 2rem;">
+            <p style="font-size: 1.5rem; font-weight: 700; text-shadow: 0 3px 6px rgba(0,0,0,0.8); max-width: 700px; margin-top: auto; background: rgba(255,255,255,0.15); padding: 1.5rem 3rem; border-radius: 15px; border: 2px solid rgba(255,255,255,0.3); backdrop-filter: blur(10px); letter-spacing: 1px; text-transform: uppercase; transition: all 0.3s ease; color: white;" onmouseover="this.style.background='rgba(255,255,255,0.25)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'; this.style.transform='translateY(0)'">Master the basic structure and syntax of HTML documents</p>
+        </section>
+
+        <section class="content">
+            <h3>HTML Document Structure</h3>
+            <div class="code-example">
+                <h4>Every HTML document has this basic structure:</h4>
+                <pre><code>&lt;!DOCTYPE html&gt;           <!-- Document type declaration -->
+&lt;html lang="en"&gt;             <!-- Root element with language -->
+&lt;head&gt;                       <!-- Document metadata -->
+    &lt;meta charset="UTF-8"&gt;    <!-- Character encoding -->
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt; <!-- Page title -->
+&lt;/head&gt;
+&lt;body&gt;                       <!-- Visible page content -->
+    <!-- Your content goes here -->
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+            
+            <h3>HTML Syntax Rules</h3>
+            <div class="concepts-grid">
+                <div class="concept">
+                    <h4>Tags</h4>
+                    <p>HTML tags are enclosed in angle brackets: <code>&lt;tagname&gt;</code></p>
+                    <div class="code-example">
+                        <pre><code>&lt;h1&gt;Heading&lt;/h1&gt;
+&lt;p&gt;Paragraph&lt;/p&gt;
+&lt;br&gt; &lt;!-- Self-closing tag --&gt;</code></pre>
+                    </div>
+                </div>
+                <div class="concept">
+                    <h4>Attributes</h4>
+                    <p>Provide additional information about elements</p>
+                    <div class="code-example">
+                        <pre><code>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;
+&lt;img src="image.jpg" alt="Description"&gt;
+&lt;div class="container" id="main"&gt;&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+                <div class="concept">
+                    <h4>Nesting</h4>
+                    <p>Elements can contain other elements</p>
+                    <div class="code-example">
+                        <pre><code>&lt;div&gt;
+    &lt;h2&gt;Section Title&lt;/h2&gt;
+    &lt;p&gt;Paragraph with &lt;strong&gt;bold&lt;/strong&gt; text&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Common HTML Elements</h3>
+            
+            <div class="example-section">
+                <h4>Text Elements</h4>
+                <div class="code-example">
+                    <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Section Heading&lt;/h2&gt;
+&lt;h3&gt;Subsection Heading&lt;/h3&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;strong&gt;Bold text&lt;/strong&gt;
+&lt;em&gt;Italicized text&lt;/em&gt;
+&lt;span&gt;Inline text&lt;/span&gt;</code></pre>
+                </div>
+            </div>
+
+            <div class="example-section">
+                <h4>Lists</h4>
+                <div class="code-example">
+                    <pre><code>&lt;!-- Unordered List --&gt;
+&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered List --&gt;
+&lt;ol&gt;
+    &lt;li&gt;First step&lt;/li&gt;
+    &lt;li&gt;Second step&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </div>
+            </div>
+
+            <div class="example-section">
+                <h4>Links and Images</h4>
+                <div class="code-example">
+                    <pre><code>&lt;!-- Links --&gt;
+&lt;a href="https://example.com"&gt;External Link&lt;/a&gt;
+&lt;a href="page.html"&gt;Internal Link&lt;/a&gt;
+&lt;a href="#section"&gt;Anchor Link&lt;/a&gt;
+
+&lt;!-- Images --&gt;
+&lt;img src="image.jpg" alt="Description"&gt;
+&lt;img src="photo.png" alt="Photo" width="300" height="200"&gt;</code></pre>
+                </div>
+            </div>
+
+            <div class="best-practices-section">
+                <h3 class="best-practices-header">HTML Best Practices & Style Guide</h3>
+                <div class="best-practices-content">
+                    <div class="style-guide-container">
+                        <img src="https://th.bing.com/th/id/OIP.77In0pKwA7zVqVEph9PTvgHaD4?w=301&h=180&c=7&r=0&o=7&cb=ucfimgc2&dpr=1.5&pid=1.7&rm=3" alt="HTML Style Guide" class="style-guide-image">
+                        <p class="image-caption">Visual guide to HTML coding standards</p>
+                    </div>
+                    <div class="best-practices-list-container">
+                        <ul class="best-practices-list">
+                            <li><strong>Use Semantic HTML</strong>Choose tags based on meaning, not appearance. Use &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, and &lt;footer&gt; appropriately.</li>
+                            <li><strong>Always Close Tags</strong>Properly nest and close all elements to ensure valid HTML structure and avoid rendering issues.</li>
+                            <li><strong>Use Lowercase</strong>Write all tags and attributes in lowercase for consistency and better readability.</li>
+                            <li><strong>Quote Attributes</strong>Always use quotes around attribute values, even for single words, to maintain consistency.</li>
+                            <li><strong>Add Alt Text</strong>Include descriptive alt text for all images to improve accessibility for screen readers.</li>
+                            <li><strong>Validate Your Code</strong>Use HTML validators to check for errors and ensure your code follows web standards.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="next-section-container">
+            <a href="/tags-reference" class="next-section">
+                Explore HTML Tags Reference
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HTML Cheat Sheet. Educational resource for web developers.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        Back to Top
+    </button>
+
+    <script>
+        // Back to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
