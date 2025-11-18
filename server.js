@@ -35,11 +35,6 @@ app.get('/', (req, res) => {
 });
 
 // Routes for each page
-app.get('/fundamentals', (req, res) => {
-  console.log('Serving fundamentals page');
-  res.sendFile(join(__dirname, 'fundamentals.html'));
-});
-
 app.get('/tags-reference', (req, res) => {
   console.log('Serving tags-reference page');
   res.sendFile(join(__dirname, 'tags-reference.html'));
