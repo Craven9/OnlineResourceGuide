@@ -19,8 +19,10 @@
     "main": "online-resource-guide.js",
     "module": "online-resource-guide.js",
     "scripts": {
-      "start": "web-dev-server",
-      "build": "rimraf public && rollup -c rollup.config.js && npm run analyze",
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "export": "next export",
       "analyze": "cem analyze --litelement --exclude public",
       "dddaudit": "hax audit",
       "release": "npm run build && commit-and-tag-version && git push --follow-tags origin main && npm publish",
@@ -28,6 +30,9 @@
       "test:watch": "web-test-runner test/**/*.test.js --node-resolve --watch"
     },
     "dependencies": {
+      "next": "^14.0.0",
+      "react": "^18.0.0",
+      "react-dom": "^18.0.0",
       "lit": "3.3.1",
       "@haxtheweb/d-d-d": "^11.0.5",
       "@haxtheweb/i18n-manager": "^11.0.0"
