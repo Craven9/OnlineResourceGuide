@@ -223,6 +223,47 @@ main::before {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Fundamentals hero section */
+.hero.fundamentals-hero {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://www.alphaacademy.org/wp-content/uploads/2021/08/HTML-5-Fundamentals.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.hero.fundamentals-hero .hero-text {
+    margin-top: auto;
+    max-width: 700px;
+}
+
+.hero.fundamentals-hero .hero-text p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.8);
+    background: rgba(255,255,255,0.15);
+    padding: 1.5rem 3rem;
+    border-radius: 15px;
+    border: 2px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.hero.fundamentals-hero .hero-text p:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
+}
+
 .cta-button {
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-dark));
     color: white;
