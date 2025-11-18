@@ -1,5 +1,9 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/fundamentals", "destination": "/fundamentals.html" },
+    { "source": "/tags-reference", "destination": "/tags-reference.html" },
+    { "source": "/examples", "destination": "/examples.html" },
+    { "source": "/resources", "destination": "/resources.html" },
+    { "source": "/test-page", "destination": "/test-page.html" }
   ]
 }
