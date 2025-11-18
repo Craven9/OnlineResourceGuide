@@ -19,10 +19,8 @@
     "main": "online-resource-guide.js",
     "module": "online-resource-guide.js",
     "scripts": {
-      "dev": "next dev",
-      "build": "next build",
-      "start": "next start",
-      "export": "next export",
+      "start": "web-dev-server",
+      "build": "echo 'Static site - no build needed'",
       "analyze": "cem analyze --litelement --exclude public",
       "dddaudit": "hax audit",
       "release": "npm run build && commit-and-tag-version && git push --follow-tags origin main && npm publish",
@@ -30,9 +28,6 @@
       "test:watch": "web-test-runner test/**/*.test.js --node-resolve --watch"
     },
     "dependencies": {
-      "next": "^14.0.0",
-      "react": "^18.0.0",
-      "react-dom": "^18.0.0",
       "lit": "3.3.1",
       "@haxtheweb/d-d-d": "^11.0.5",
       "@haxtheweb/i18n-manager": "^11.0.0"
