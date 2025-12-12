@@ -14,6 +14,14 @@
     --accent-muted-teal: #81a69b;
     --accent-warm-gray: #a78b71;
     
+    /* Additional Color Variables */
+    --primary-blue: #3b82f6;
+    --primary-blue-dark: #2563eb;
+    --secondary-purple: #8b5cf6;
+    --accent-emerald: #10b981;
+    --accent-cyan: #06b6d4;
+    --accent-orange: #f59e0b;
+    
     /* Gentle Neutral Colors */
     --gray-50: #f9fafb;
     --gray-100: #f3f4f6;
@@ -438,14 +446,13 @@ pre::before {
 
 code {
     font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
-    background: linear-gradient(135deg, var(--accent-emerald), var(--accent-cyan));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: var(--gray-100);
+    color: var(--primary-sage);
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     font-size: 0.9rem;
     font-weight: 600;
+    border: 1px solid var(--gray-200);
 }
 
 pre code {
@@ -1700,4 +1707,133 @@ html {
         font-size: 0.8rem;
         margin-bottom: 0.5rem;
     }
+}
+
+/* FAQ Styles */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.faq-item {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-sage);
+}
+
+.faq-question {
+    background: linear-gradient(135deg, var(--primary-sage) 0%, var(--primary-sage-dark) 100%);
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.faq-question h3 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.faq-answer {
+    padding: 2rem;
+    background: var(--bg-primary);
+}
+
+.faq-answer p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+.faq-answer p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-answer ul, .faq-answer ol {
+    margin: 1rem 0 1.5rem 1.5rem;
+    color: var(--text-secondary);
+}
+
+.faq-answer li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.faq-answer .code-example {
+    margin: 1.5rem 0;
+    background: var(--gray-50);
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+    overflow: hidden;
+}
+
+.faq-answer .code-example h4 {
+    background: var(--gray-100);
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.faq-answer .code-example pre {
+    margin: 0;
+    padding: 1.5rem;
+    background: var(--gray-50);
+    overflow-x: auto;
+}
+
+.faq-answer .code-example code {
+    background: none;
+    padding: 0;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    border: none;
+}
+
+/* Glossary Styles */
+.glossary-list {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.glossary-list dt {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-sage);
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-sage);
+    padding-bottom: 0.25rem;
+}
+
+.glossary-list dd {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0 0 0 1rem;
+    padding-bottom: 1rem;
+}
+
+.glossary-list dd code {
+    background: var(--gray-100) !important;
+    color: var(--primary-sage) !important;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 4px !important;
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    border: 1px solid var(--gray-200) !important;
 }
