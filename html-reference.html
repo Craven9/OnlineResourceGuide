@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quick Reference - HTML Guide for Beginners</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">
+                <h1>HTML Guide for Beginners</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/html-reference" class="active" aria-current="page">HTML Quick Reference</a></li>
+                <li><a href="/resources">Six Essential Resources</a></li>
+                <li><a href="/study-tools">Study Tools</a></li>
+                <li><a href="/help-faq">Help & FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>HTML Quick Reference</h1>
+            <p class="hero-subtitle">Complete reference guide for essential HTML elements with examples and syntax guidance.</p>
+        </section>
+
+        <section class="content">
+            <h2 id="basic-structure">Basic Page Structure</h2>
+            <p>Every HTML document follows a standard structure that tells the browser how to interpret and display your content. This foundation ensures your pages work correctly across different browsers and devices.</p>
+            
+            <div class="code-example">
+                <h3>Essential Document Structure</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Page Title Here&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Your visible content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <div class="structure-explanation">
+                <h3>Structure Elements Explained</h3>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code> - Tells browser this is HTML5 (required first line)</li>
+                    <li><code>&lt;html lang="en"&gt;</code> - Root element with language declaration for accessibility</li>
+                    <li><code>&lt;head&gt;</code> - Contains metadata not visible to users</li>
+                    <li><code>&lt;meta charset="UTF-8"&gt;</code> - Character encoding for international text support</li>
+                    <li><code>&lt;meta name="viewport"&gt;</code> - Responsive design setup for mobile devices</li>
+                    <li><code>&lt;title&gt;</code> - Page title shown in browser tab and search results</li>
+                    <li><code>&lt;body&gt;</code> - Contains all visible page content</li>
+                </ul>
+            </div>
+
+            <h2 id="text-elements">Text and Structure Tags</h2>
+            <p>Text elements provide the foundation for organizing and formatting content. Understanding proper heading hierarchy and text formatting ensures both readability and accessibility compliance for assignments.</p>
+
+            <h3>Headings (H1-H6)</h3>
+            <div class="code-example">
+                <pre><code>&lt;h1&gt;Main Page Title&lt;/h1&gt;
+&lt;h2&gt;Major Section Heading&lt;/h2&gt;
+&lt;h3&gt;Subsection Heading&lt;/h3&gt;
+&lt;h4&gt;Sub-subsection Heading&lt;/h4&gt;
+&lt;h5&gt;Minor Heading&lt;/h5&gt;
+&lt;h6&gt;Smallest Heading&lt;/h6&gt;</code></pre>
+            </div>
+            
+            <div class="best-practice-note">
+                <h4>Heading Best Practices</h4>
+                <ul>
+                    <li>Use only one H1 per page for the main title</li>
+                    <li>Do not skip heading levels (H1 → H3 without H2)</li>
+                    <li>Use headings for structure, not just visual formatting</li>
+                </ul>
+            </div>
+
+            <h3>Paragraphs and Text Formatting</h3>
+            <div class="code-example">
+                <pre><code>&lt;p&gt;This is a paragraph. Use paragraphs to group related sentences.&lt;/p&gt;
+
+&lt;p&gt;Text can include &lt;strong&gt;important text&lt;/strong&gt; and &lt;em&gt;emphasized text&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can also use &lt;code&gt;inline code&lt;/code&gt; for technical terms.&lt;/p&gt;
+
+&lt;blockquote&gt;
+    This is a longer quote or excerpt from another source.
+    Use blockquote for citations or notable text passages.
+&lt;/blockquote&gt;</code></pre>
+            </div>
+
+            <h3>Lists</h3>
+            <div class="code-example">
+                <h4>Unordered Lists (Bullet Points)</h4>
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                <h4>Ordered Lists (Numbered)</h4>
+                <pre><code>&lt;ol&gt;
+    &lt;li&gt;First step&lt;/li&gt;
+    &lt;li&gt;Second step&lt;/li&gt;
+    &lt;li&gt;Third step&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+                <h4>Definition Lists</h4>
+                <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+            </div>
+
+            <h2 id="links-images">Links and Images</h2>
+            <p>Links and images connect your content to the broader web and provide visual elements. Proper implementation includes accessibility features and clear navigation patterns essential for user experience.</p>
+
+            <h3>Links</h3>
+            <div class="code-example">
+                <pre><code>&lt;!-- External link (to another website) --&gt;
+&lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;
+
+&lt;!-- Internal link (to another page on your site) --&gt;
+&lt;a href="about.html"&gt;About Page&lt;/a&gt;
+
+&lt;!-- Anchor link (to section on same page) --&gt;
+&lt;a href="#contact-section"&gt;Jump to Contact Section&lt;/a&gt;
+
+&lt;!-- Email link --&gt;
+&lt;a href="mailto:student@example.com"&gt;Send Email&lt;/a&gt;</code></pre>
+            </div>
+
+            <div class="path-explanation">
+                <h4>Understanding File Paths</h4>
+                <ul>
+                    <li><strong>Relative path:</strong> <code>about.html</code> (same folder)</li>
+                    <li><strong>Relative path:</strong> <code>pages/about.html</code> (in subfolder)</li>
+                    <li><strong>Relative path:</strong> <code>../index.html</code> (up one folder)</li>
+                    <li><strong>Absolute path:</strong> <code>https://www.example.com/page.html</code> (full URL)</li>
+                </ul>
+            </div>
+
+            <h3>Images</h3>
+            <div class="code-example">
+                <pre><code>&lt;!-- Basic image --&gt;
+&lt;img src="photo.jpg" alt="Description of the image for screen readers"&gt;
+
+&lt;!-- Image with size specifications --&gt;
+&lt;img src="logo.png" alt="Company logo" width="200" height="100"&gt;
+
+&lt;!-- Image as a link --&gt;
+&lt;a href="full-size.jpg"&gt;
+    &lt;img src="thumbnail.jpg" alt="Click to view full size image"&gt;
+&lt;/a&gt;</code></pre>
+            </div>
+
+            <div class="best-practice-note">
+                <h4>Image Best Practices</h4>
+                <ul>
+                    <li>Always include alt text describing the image content</li>
+                    <li>Use descriptive file names (not IMG_001.jpg)</li>
+                    <li>Optimize image file sizes for web loading</li>
+                    <li>Use appropriate file formats: JPG for photos, PNG for graphics with transparency</li>
+                </ul>
+            </div>
+
+            <h2 id="semantic-layout">Semantic Layout Elements</h2>
+            <p>Semantic HTML elements provide meaningful structure that improves accessibility, search engine optimization, and code maintainability. These elements clearly identify different content sections and their purposes.</p>
+
+            <div class="code-example">
+                <pre><code>&lt;header&gt;
+    &lt;h1&gt;Website Title&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Article Title&lt;/h2&gt;
+        &lt;p&gt;Main article content goes here.&lt;/p&gt;
+    &lt;/article&gt;
+    
+    &lt;aside&gt;
+        &lt;h3&gt;Related Links&lt;/h3&gt;
+        &lt;p&gt;Sidebar content goes here.&lt;/p&gt;
+    &lt;/aside&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;Copyright 2025 Website Name&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+            </div>
+
+            <div class="semantic-explanation">
+                <h3>Semantic Elements Explained</h3>
+                <ul>
+                    <li><code>&lt;header&gt;</code> - Page or section header with titles and navigation</li>
+                    <li><code>&lt;nav&gt;</code> - Navigation links and menus</li>
+                    <li><code>&lt;main&gt;</code> - Primary content of the page (use only once per page)</li>
+                    <li><code>&lt;article&gt;</code> - Self-contained content that could stand alone</li>
+                    <li><code>&lt;section&gt;</code> - Thematic grouping of content with heading</li>
+                    <li><code>&lt;aside&gt;</code> - Sidebar content related but not essential to main content</li>
+                    <li><code>&lt;footer&gt;</code> - Page or section footer with metadata</li>
+                </ul>
+            </div>
+
+            <h2 id="tables-forms">Tables and Forms Basics</h2>
+            <p>Tables display tabular data clearly, while forms collect user input. Both require proper structure and labeling for accessibility and usability in academic and professional contexts.</p>
+
+            <h3>Tables</h3>
+            <div class="code-example">
+                <pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;City&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John Smith&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+            &lt;td&gt;Boston&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Jane Doe&lt;/td&gt;
+            &lt;td&gt;30&lt;/td&gt;
+            &lt;td&gt;Chicago&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+
+            <h3>Forms</h3>
+            <div class="code-example">
+                <pre><code>&lt;form action="submit.php" method="post"&gt;
+    &lt;label for="name"&gt;Full Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message" rows="4"&gt;&lt;/textarea&gt;
+    
+    &lt;label for="newsletter"&gt;
+        &lt;input type="checkbox" id="newsletter" name="newsletter"&gt;
+        Subscribe to newsletter
+    &lt;/label&gt;
+    
+    &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </div>
+
+            <h2 id="common-attributes">Common Attributes</h2>
+            <p>Attributes provide additional information about HTML elements and control their behavior. Understanding essential attributes enables proper styling, accessibility, and functionality for coursework projects.</p>
+
+            <div class="attributes-table">
+                <h3>Essential Attributes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Purpose</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>id</code></td>
+                            <td>Unique identifier for element</td>
+                            <td><code>&lt;div id="main-content"&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>class</code></td>
+                            <td>CSS styling group</td>
+                            <td><code>&lt;p class="highlight"&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>src</code></td>
+                            <td>Source file location</td>
+                            <td><code>&lt;img src="photo.jpg"&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>href</code></td>
+                            <td>Link destination</td>
+                            <td><code>&lt;a href="page.html"&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>alt</code></td>
+                            <td>Alternative text for images</td>
+                            <td><code>&lt;img alt="Description"&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>title</code></td>
+                            <td>Tooltip text on hover</td>
+                            <td><code>&lt;a title="More info"&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>lang</code></td>
+                            <td>Language declaration</td>
+                            <td><code>&lt;html lang="en"&gt;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 id="common-mistakes">Common Beginner Mistakes</h2>
+            <p>Recognizing and avoiding common HTML errors saves debugging time and ensures assignment success. These mistakes frequently appear in beginner code and have straightforward solutions.</p>
+
+            <div class="mistakes-grid">
+                <div class="mistake-card">
+                    <h3>Missing Closing Tags</h3>
+                    <div class="wrong-code">
+                        <h4>❌ Wrong:</h4>
+                        <pre><code>&lt;p&gt;This paragraph is not closed
+&lt;div&gt;This div is not closed
+&lt;h1&gt;Missing closing tag</code></pre>
+                    </div>
+                    <div class="correct-code">
+                        <h4>✅ Correct:</h4>
+                        <pre><code>&lt;p&gt;This paragraph is properly closed&lt;/p&gt;
+&lt;div&gt;This div is properly closed&lt;/div&gt;
+&lt;h1&gt;Proper closing tag&lt;/h1&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="mistake-card">
+                    <h3>Incorrect Nesting</h3>
+                    <div class="wrong-code">
+                        <h4>❌ Wrong:</h4>
+                        <pre><code>&lt;p&gt;&lt;div&gt;Block elements inside inline&lt;/div&gt;&lt;/p&gt;
+&lt;strong&gt;&lt;em&gt;Overlapping tags&lt;/strong&gt;&lt;/em&gt;</code></pre>
+                    </div>
+                    <div class="correct-code">
+                        <h4>✅ Correct:</h4>
+                        <pre><code>&lt;div&gt;&lt;p&gt;Block elements contain inline&lt;/p&gt;&lt;/div&gt;
+&lt;strong&gt;&lt;em&gt;Properly nested tags&lt;/em&gt;&lt;/strong&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="mistake-card">
+                    <h3>Missing Alt Text</h3>
+                    <div class="wrong-code">
+                        <h4>❌ Wrong:</h4>
+                        <pre><code>&lt;img src="photo.jpg"&gt;
+&lt;img src="chart.png" alt=""&gt;</code></pre>
+                    </div>
+                    <div class="correct-code">
+                        <h4>✅ Correct:</h4>
+                        <pre><code>&lt;img src="photo.jpg" alt="Students working in library"&gt;
+&lt;img src="chart.png" alt="Sales data showing 20% increase"&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="mistake-card">
+                    <h3>Case Sensitivity Errors</h3>
+                    <div class="wrong-code">
+                        <h4>❌ Wrong:</h4>
+                        <pre><code>&lt;P&gt;Mixed case tags&lt;/p&gt;
+&lt;IMG SRC="photo.jpg" ALT="description"&gt;</code></pre>
+                    </div>
+                    <div class="correct-code">
+                        <h4>✅ Correct:</h4>
+                        <pre><code>&lt;p&gt;Consistent lowercase&lt;/p&gt;
+&lt;img src="photo.jpg" alt="description"&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Debugging Tips</h3>
+            <ul class="debugging-tips">
+                <li><strong>Validate your HTML:</strong> Use the W3C HTML Validator to check for syntax errors</li>
+                <li><strong>Check the browser console:</strong> Open Developer Tools (F12) to see error messages</li>
+                <li><strong>Indent your code:</strong> Proper indentation makes nesting errors visible</li>
+                <li><strong>Use a code editor:</strong> Syntax highlighting catches many mistakes automatically</li>
+                <li><strong>Test in multiple browsers:</strong> Ensure consistent behavior across different platforms</li>
+            </ul>
+
+            <h2 id="templates">Mini Templates</h2>
+            <p>These starter templates provide proven foundations for common assignment types. Copy and modify these examples to begin new projects with proper structure and essential elements already in place.</p>
+
+            <h3>Basic Academic Paper Template</h3>
+            <div class="code-example">
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Paper Title - Your Name&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Your Paper Title&lt;/h1&gt;
+        &lt;p&gt;By Your Name&lt;/p&gt;
+        &lt;p&gt;Course Name - Date&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Introduction&lt;/h2&gt;
+            &lt;p&gt;Your introduction content here.&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h2&gt;Main Section&lt;/h2&gt;
+            &lt;p&gt;Your main content here.&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h2&gt;Conclusion&lt;/h2&gt;
+            &lt;p&gt;Your conclusion here.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;Created for [Course Name] - [Date]&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <h3>Simple Website Template</h3>
+            <div class="code-example">
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Website Name&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Website Title&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;h2&gt;Welcome&lt;/h2&gt;
+        &lt;p&gt;Your main content goes here.&lt;/p&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2025 Your Name. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <h2 id="quick-index">Quick Reference Index</h2>
+            <p>Alphabetical listing of HTML elements covered in this guide. Click any element name to jump to its detailed explanation and examples.</p>
+
+            <div class="quick-index-grid">
+                <div class="index-column">
+                    <h3>A-F</h3>
+                    <ul>
+                        <li><a href="#links-images">a (anchor/link)</a></li>
+                        <li><a href="#semantic-layout">article</a></li>
+                        <li><a href="#semantic-layout">aside</a></li>
+                        <li><a href="#text-elements">blockquote</a></li>
+                        <li><a href="#basic-structure">body</a></li>
+                        <li><a href="#forms">button</a></li>
+                        <li><a href="#text-elements">code</a></li>
+                        <li><a href="#tables">dd</a></li>
+                        <li><a href="#tables">dl</a></li>
+                        <li><a href="#tables">dt</a></li>
+                        <li><a href="#text-elements">em</a></li>
+                        <li><a href="#semantic-layout">footer</a></li>
+                        <li><a href="#forms">form</a></li>
+                    </ul>
+                </div>
+                <div class="index-column">
+                    <h3>H-O</h3>
+                    <ul>
+                        <li><a href="#text-elements">h1, h2, h3, h4, h5, h6</a></li>
+                        <li><a href="#basic-structure">head</a></li>
+                        <li><a href="#semantic-layout">header</a></li>
+                        <li><a href="#basic-structure">html</a></li>
+                        <li><a href="#links-images">img</a></li>
+                        <li><a href="#forms">input</a></li>
+                        <li><a href="#forms">label</a></li>
+                        <li><a href="#text-elements">li</a></li>
+                        <li><a href="#semantic-layout">main</a></li>
+                        <li><a href="#basic-structure">meta</a></li>
+                        <li><a href="#semantic-layout">nav</a></li>
+                        <li><a href="#text-elements">ol</a></li>
+                    </ul>
+                </div>
+                <div class="index-column">
+                    <h3>P-Z</h3>
+                    <ul>
+                        <li><a href="#text-elements">p</a></li>
+                        <li><a href="#semantic-layout">section</a></li>
+                        <li><a href="#forms">select</a></li>
+                        <li><a href="#text-elements">strong</a></li>
+                        <li><a href="#tables">table</a></li>
+                        <li><a href="#tables">tbody</a></li>
+                        <li><a href="#tables">td</a></li>
+                        <li><a href="#forms">textarea</a></li>
+                        <li><a href="#tables">th</a></li>
+                        <li><a href="#tables">thead</a></li>
+                        <li><a href="#basic-structure">title</a></li>
+                        <li><a href="#tables">tr</a></li>
+                        <li><a href="#text-elements">ul</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/html-reference">HTML Reference</a>
+                <a href="/resources">Resources</a>
+                <a href="/study-tools">Study Tools</a>
+                <a href="/help-faq">Help & FAQ</a>
+            </div>
+            <div class="footer-info">
+                <p>Created for beginner web developers | <a href="mailto:support@htmlguide.edu">Contact Support</a></p>
+                <p>Last updated: December 11, 2025 | <a href="#top">Back to top</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

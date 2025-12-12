@@ -3,239 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Cheat Sheet - Your Complete Reference</title>
+    <title>HTML Cheat Sheet and Resource Guide for Beginner Web Developers</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <div class="logo">
-                <h1>HTML Cheat Sheet</h1>
+                <h1>HTML Guide for Beginners</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="/" class="active">Home</a></li>
-                <li><a href="/tags-reference">Tags Reference</a></li>
-                <li><a href="/examples">Examples</a></li>
-                <li><a href="/resources">Resources</a></li>
+                <li><a href="/" class="active" aria-current="page">Home</a></li>
+                <li><a href="/html-reference">HTML Quick Reference</a></li>
+                <li><a href="/resources">Six Essential Resources</a></li>
+                <li><a href="/study-tools">Study Tools</a></li>
+                <li><a href="/help-faq">Help & FAQ</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero home-hero">
-            <h2>HTML Cheat Sheet</h2>
-            <p>Your complete reference guide for HTML tags, syntax, and best practices.</p>
-            <a href="/tags-reference" class="cta-button">View Tags Reference</a>
+        <section class="hero">
+            <h1>HTML Cheat Sheet and Resource Guide for Beginner Web Developers</h1>
+            <p class="hero-subtitle">Your complete reference for HTML fundamentals, curated resources, and practical tools to succeed in introductory web development courses.</p>
+            <div class="cta-buttons">
+                <a href="#table-of-contents" class="cta-primary">Start Learning</a>
+                <a href="/html-reference" class="cta-secondary">Quick Reference</a>
+            </div>
         </section>
 
         <section class="content">
-            <h3>What is HTML?</h3>
-            <p><strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. It describes the structure of web pages using markup tags.</p>
+            <h2 id="table-of-contents">Table of Contents</h2>
+            <div class="toc-container">
+                <div class="toc-column">
+                    <h3>Getting Started</h3>
+                    <ul>
+                        <li><a href="#whats-in-guide">What's in the Guide</a></li>
+                        <li><a href="#who-guide-for">Who the Guide is for</a></li>
+                        <li><a href="#what-guide-assumes">What the Guide assumes users know</a></li>
+                        <li><a href="#how-organized">How the Guide is organized for use</a></li>
+                        <li><a href="#tips-for-using">Tips for using the Guide</a></li>
+                    </ul>
+                </div>
+                <div class="toc-column">
+                    <h3>Core Content</h3>
+                    <ul>
+                        <li><a href="/html-reference#basic-structure">Basic HTML Structure</a></li>
+                        <li><a href="/html-reference#text-elements">Text and Structure Tags</a></li>
+                        <li><a href="/html-reference#links-images">Links and Images</a></li>
+                        <li><a href="/html-reference#semantic-layout">Semantic Layout Elements</a></li>
+                        <li><a href="/html-reference#tables-forms">Tables and Forms</a></li>
+                        <li><a href="/html-reference#common-attributes">Common Attributes</a></li>
+                        <li><a href="/html-reference#common-mistakes">Common Beginner Mistakes</a></li>
+                        <li><a href="/html-reference#templates">Mini Templates</a></li>
+                    </ul>
+                </div>
+                <div class="toc-column">
+                    <h3>Tools and Resources</h3>
+                    <ul>
+                        <li><a href="/resources">Six Essential Resources</a></li>
+                        <li><a href="/study-tools#printable-cheat">Printable Cheat Sheet</a></li>
+                        <li><a href="/study-tools#glossary">Glossary</a></li>
+                        <li><a href="/study-tools#checklist">Assignment Checklist</a></li>
+                        <li><a href="/html-reference#quick-index">Quick Reference Index</a></li>
+                        <li><a href="/help-faq">FAQ and Troubleshooting</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 id="whats-in-guide">What's in the Guide</h2>
+            <p>This guide provides everything a beginning HTML student needs for coursework success. You will find comprehensive coverage of essential HTML elements, practical code examples you can copy and modify, and six carefully selected internet resources that address common learning challenges.</p>
             
-            <h3>Quick Start</h3>
-            <div class="code-example">
-                <h4>Basic HTML Document Structure:</h4>
-                <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;Page Title&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Hello World!&lt;/h1&gt;
-    &lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-            </div>
+            <p>The guide includes complete reference materials for basic page structure, text formatting, links, images, semantic layout elements, simple tables and forms, and crucial attributes. Each section provides both explanation and immediately usable code examples. Beyond the reference material, you will find debugging guidance for the most frequent beginner errors, mini-templates for starting new projects, and study tools including a printable cheat sheet and assignment submission checklist.</p>
 
-            <h3>HTML Document Structure</h3>
-            <div class="code-example">
-                <h4>Every HTML document has this basic structure:</h4>
-                <pre><code>&lt;!DOCTYPE html&gt;           <!-- Document type declaration -->
-&lt;html lang="en"&gt;             <!-- Root element with language -->
-&lt;head&gt;                       <!-- Document metadata -->
-    &lt;meta charset="UTF-8"&gt;    <!-- Character encoding -->
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Page Title&lt;/title&gt; <!-- Page title -->
-&lt;/head&gt;
-&lt;body&gt;                       <!-- Visible page content -->
-    <!-- Your content goes here -->
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-            </div>
+            <h2 id="who-guide-for">Who the Guide is for</h2>
+            <p>This guide serves students enrolled in introductory web development or technical writing courses who are learning HTML for the first time. The target audience includes college students, adult learners, and anyone beginning web development study who needs reliable reference materials and carefully vetted external resources.</p>
             
-            <h3>HTML Syntax Rules</h3>
-            <div class="concepts-grid">
-                <div class="concept">
-                    <h4>Tags</h4>
-                    <p>HTML tags are enclosed in angle brackets: <code>&lt;tagname&gt;</code></p>
-                    <div class="code-example">
-                        <pre><code>&lt;h1&gt;Heading&lt;/h1&gt;
-&lt;p&gt;Paragraph&lt;/p&gt;
-&lt;br&gt; &lt;!-- Self-closing tag --&gt;</code></pre>
-                    </div>
-                </div>
-                <div class="concept">
-                    <h4>Attributes</h4>
-                    <p>Provide additional information about elements</p>
-                    <div class="code-example">
-                        <pre><code>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;
-&lt;img src="image.jpg" alt="Description"&gt;
-&lt;div class="container" id="main"&gt;&lt;/div&gt;</code></pre>
-                    </div>
-                </div>
-                <div class="concept">
-                    <h4>Nesting</h4>
-                    <p>Elements can contain other elements</p>
-                    <div class="code-example">
-                        <pre><code>&lt;div&gt;
-    &lt;h2&gt;Section Title&lt;/h2&gt;
-    &lt;p&gt;Paragraph with &lt;strong&gt;bold&lt;/strong&gt; text&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-                    </div>
-                </div>
-            </div>
+            <p>The guide specifically addresses the needs of Penn State students working on HTML assignments, but the content remains broadly applicable to any beginner-level HTML learning context. Students using this guide typically have basic computer literacy skills including file management, web browsing, and text editing, but minimal or no coding experience.</p>
 
-            <h3>Common HTML Elements</h3>
+            <h2 id="what-guide-assumes">What the Guide assumes users know</h2>
+            <p>This guide assumes you can perform basic computer tasks including creating and saving text files, navigating web browsers, and downloading files from the internet. You should be comfortable using a text editor or code editor program, though the guide does not require knowledge of any specific software.</p>
             
-            <div class="example-section">
-                <h4>Text Elements</h4>
-                <div class="code-example">
-                    <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
-&lt;h2&gt;Section Heading&lt;/h2&gt;
-&lt;h3&gt;Subsection Heading&lt;/h3&gt;
-&lt;p&gt;This is a paragraph&lt;/p&gt;
-&lt;strong&gt;Bold text&lt;/strong&gt;
-&lt;em&gt;Italicized text&lt;/em&gt;
-&lt;span&gt;Inline text&lt;/span&gt;</code></pre>
+            <p>The guide assumes no prior coding or web development knowledge. Technical concepts are introduced with clear definitions, and programming vocabulary is explained when first used. Students are expected to have access to a computer with internet connection and the ability to view HTML files in a web browser.</p>
+
+            <h2 id="how-organized">How the Guide is organized for use</h2>
+            <p>The guide follows a modular structure designed for both sequential learning and quick reference lookup. The HTML Quick Reference section presents core concepts in logical order from basic page structure through more complex elements, with each subsection containing explanation, syntax examples, and practical usage notes.</p>
+            
+            <p>The Six Essential Resources section groups external sites by function (official documentation, tutorials, validation tools) with detailed abstracts explaining how beginners can use each resource effectively. Study Tools provide supplementary materials including a printable reference, glossary, and assignment checklist that support different learning preferences and course requirements.</p>
+            
+            <p>Cross-references throughout the guide connect related concepts, while anchor links enable quick navigation to specific topics. The FAQ section addresses common confusion points that arise during introductory coursework.</p>
+
+            <h2 id="tips-for-using">Tips for using the Guide</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h3>For Quick Lookups</h3>
+                    <ul>
+                        <li>Use the Quick Reference Index for alphabetical tag listings</li>
+                        <li>Bookmark frequently needed sections like Common Attributes</li>
+                        <li>Copy code examples directly from fenced code blocks</li>
+                        <li>Check the FAQ first when encountering errors</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <h3>For Assignment Work</h3>
+                    <ul>
+                        <li>Start with the Mini Templates when beginning new projects</li>
+                        <li>Use the Assignment Checklist before submission</li>
+                        <li>Validate your code using the recommended validator tools</li>
+                        <li>Reference the Common Mistakes section when debugging</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <h3>For Study and Review</h3>
+                    <ul>
+                        <li>Print the Printable Cheat Sheet for offline reference</li>
+                        <li>Review the Glossary to reinforce terminology</li>
+                        <li>Practice with examples from the Six Resources section</li>
+                        <li>Use semantic layout guidance for better code organization</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="example-section">
-                <h4>Lists</h4>
-                <div class="code-example">
-                    <pre><code>&lt;!-- Unordered List --&gt;
-&lt;ul&gt;
-    &lt;li&gt;First item&lt;/li&gt;
-    &lt;li&gt;Second item&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- Ordered List --&gt;
-&lt;ol&gt;
-    &lt;li&gt;First step&lt;/li&gt;
-    &lt;li&gt;Second step&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-                </div>
-            </div>
-
-            <div class="example-section">
-                <h4>Links and Images</h4>
-                <div class="code-example">
-                    <pre><code>&lt;!-- Links --&gt;
-&lt;a href="https://example.com"&gt;External Link&lt;/a&gt;
-&lt;a href="page.html"&gt;Internal Link&lt;/a&gt;
-&lt;a href="#section"&gt;Anchor Link&lt;/a&gt;
-
-&lt;!-- Images --&gt;
-&lt;img src="image.jpg" alt="Description"&gt;
-&lt;img src="photo.png" alt="Photo" width="300" height="200"&gt;</code></pre>
-                </div>
-            </div>
-
-            <div class="best-practices-section">
-                <h3 class="best-practices-header">HTML Best Practices & Style Guide</h3>
-                <div class="best-practices-content">
-                    <div class="style-guide-container">
-                        <img src="https://th.bing.com/th/id/OIP.77In0pKwA7zVqVEph9PTvgHaD4?w=301&h=180&c=7&r=0&o=7&cb=ucfimgc2&dpr=1.5&pid=1.7&rm=3" alt="HTML Style Guide" class="style-guide-image">
-                        <p class="image-caption">Visual guide to HTML coding standards</p>
-                    </div>
-                    <div class="best-practices-list-container">
-                        <ul class="best-practices-list">
-                            <li><strong>Use Semantic HTML:</strong> Choose tags based on meaning, not appearance. Use &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, and &lt;footer&gt; appropriately.</li>
-                            <li><strong>Always Close Tags:</strong> Properly nest and close all elements to ensure valid HTML structure and avoid rendering issues.</li>
-                            <li><strong>Use Lowercase:</strong> Write all tags and attributes in lowercase for consistency and better readability.</li>
-                            <li><strong>Quote Attributes:</strong> Always use quotes around attribute values, even for single words, to maintain consistency.</li>
-                            <li><strong>Add Alt Text:</strong> Include descriptive alt text for all images to improve accessibility for screen readers.</li>
-                            <li><strong>Validate Your Code:</strong> Use HTML validators to check for errors and ensure your code follows web standards.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <h3>Navigation Guide</h3>
-            <ul class="nav-guide">
-                <li>
-                    <div class="nav-guide-content">
-                        <strong>Tags Reference:</strong> Complete list of HTML tags with descriptions
-                        <a href="/tags-reference" class="nav-guide-btn">View</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="nav-guide-content">
-                        <strong>Examples:</strong> Practical code examples and implementations
-                        <a href="/examples" class="nav-guide-btn">View</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="nav-guide-content">
-                        <strong>Resources:</strong> Additional learning materials and tools
-                        <a href="/resources" class="nav-guide-btn">View</a>
-                    </div>
-                </li>
-            </ul>
-
-            <h3>Key HTML Concepts</h3>
-            <div class="concepts-grid">
-                <div class="concept">
-                    <h4>Elements & Tags</h4>
-                    <p>HTML uses tags to define elements like headings, paragraphs, and links.</p>
-                </div>
-                <div class="concept">
-                    <h4>Attributes</h4>
-                    <p>Tags can have attributes that provide additional information about elements.</p>
-                </div>
-                <div class="concept">
-                    <h4>Semantic HTML</h4>
-                    <p>Use meaningful tags that describe the content's purpose, not just appearance.</p>
+            <div class="getting-started-section">
+                <h2>Ready to Start?</h2>
+                <p>Begin with the <a href="/html-reference#basic-structure">Basic HTML Structure</a> section to understand fundamental page organization, or jump directly to the <a href="/html-reference#quick-index">Quick Reference Index</a> to look up specific tags. For assignment help, visit the <a href="/study-tools#checklist">Assignment Checklist</a> or explore the <a href="/resources">Six Essential Resources</a> for additional learning support.</p>
+                
+                <div class="quick-links">
+                    <a href="/html-reference" class="quick-link-btn">Start with HTML Basics</a>
+                    <a href="/resources" class="quick-link-btn">Explore Resources</a>
+                    <a href="/study-tools" class="quick-link-btn">Get Study Tools</a>
                 </div>
             </div>
         </section>
-
-        <div class="next-section-container">
-            <a href="/tags-reference" class="next-section">
-                Explore HTML Tags Reference
-                <span class="arrow">→</span>
-            </a>
-        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 HTML Cheat Sheet. Educational resource for web developers.</p>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/html-reference">HTML Reference</a>
+                <a href="/resources">Resources</a>
+                <a href="/study-tools">Study Tools</a>
+                <a href="/help-faq">Help & FAQ</a>
+            </div>
+            <div class="footer-info">
+                <p>Created for beginner web developers | <a href="mailto:support@htmlguide.edu">Contact Support</a></p>
+                <p>Last updated: December 11, 2025 | <a href="#top">Back to top</a></p>
+            </div>
+        </div>
     </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
-        Back to Top
-    </button>
-
-    <script>
-        // Back to top functionality
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-
-        // Show/hide back to top button based on scroll position
-        window.addEventListener('scroll', function() {
-            const backToTopButton = document.getElementById('backToTop');
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('visible');
-            } else {
-                backToTopButton.classList.remove('visible');
-            }
-        });
-    </script>
 </body>
 </html>

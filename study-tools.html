@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tools - HTML Guide for Beginners</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">
+                <h1>HTML Guide for Beginners</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/html-reference">HTML Quick Reference</a></li>
+                <li><a href="/resources">Six Essential Resources</a></li>
+                <li><a href="/study-tools" class="active" aria-current="page">Study Tools</a></li>
+                <li><a href="/help-faq">Help & FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Study Tools</h1>
+            <p class="hero-subtitle">Practical tools to support your learning: printable references, glossary, and assignment checklist.</p>
+        </section>
+
+        <section class="content">
+            <h2 id="printable-cheat">Printable Cheat Sheet</h2>
+            <p>This condensed reference includes the most essential HTML elements for quick lookup during assignments and exams. Print this page for offline reference or bookmark for quick access during coding sessions.</p>
+
+            <div class="printable-section">
+                <h3>Essential HTML Structure</h3>
+                <div class="cheat-grid">
+                    <div class="cheat-column">
+                        <h4>Document Structure</h4>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Content here
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                    <div class="cheat-column">
+                        <h4>Headings</h4>
+                        <pre><code>&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;h2&gt;Section&lt;/h2&gt;
+&lt;h3&gt;Subsection&lt;/h3&gt;
+&lt;h4&gt;Minor&lt;/h4&gt;
+&lt;h5&gt;Smaller&lt;/h5&gt;
+&lt;h6&gt;Smallest&lt;/h6&gt;</code></pre>
+                    </div>
+                    <div class="cheat-column">
+                        <h4>Text Elements</h4>
+                        <pre><code>&lt;p&gt;Paragraph&lt;/p&gt;
+&lt;strong&gt;Important&lt;/strong&gt;
+&lt;em&gt;Emphasis&lt;/em&gt;
+&lt;code&gt;Code text&lt;/code&gt;
+&lt;blockquote&gt;Quote&lt;/blockquote&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="cheat-grid">
+                    <div class="cheat-column">
+                        <h4>Lists</h4>
+                        <pre><code>&lt;ul&gt;
+  &lt;li&gt;Bullet item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Numbered item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    </div>
+                    <div class="cheat-column">
+                        <h4>Links & Images</h4>
+                        <pre><code>&lt;a href="url"&gt;Link text&lt;/a&gt;
+
+&lt;img src="image.jpg" 
+     alt="Description"&gt;</code></pre>
+                    </div>
+                    <div class="cheat-column">
+                        <h4>Semantic Layout</h4>
+                        <pre><code>&lt;header&gt;Top of page&lt;/header&gt;
+&lt;nav&gt;Navigation&lt;/nav&gt;
+&lt;main&gt;Main content&lt;/main&gt;
+&lt;article&gt;Article&lt;/article&gt;
+&lt;section&gt;Section&lt;/section&gt;
+&lt;aside&gt;Sidebar&lt;/aside&gt;
+&lt;footer&gt;Bottom&lt;/footer&gt;</code></pre>
+                    </div>
+                </div>
+
+                <div class="cheat-grid">
+                    <div class="cheat-column">
+                        <h4>Tables</h4>
+                        <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                    </div>
+                    <div class="cheat-column">
+                        <h4>Forms</h4>
+                        <pre><code>&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name"&gt;
+  
+  &lt;button type="submit"&gt;
+    Submit
+  &lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                    </div>
+                    <div class="cheat-column">
+                        <h4>Common Attributes</h4>
+                        <pre><code>id="unique-identifier"
+class="style-group"
+src="file-location"
+href="link-destination"
+alt="image-description"
+title="tooltip-text"
+lang="language-code"</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="glossary">Glossary</h2>
+            <p>Key terms and concepts for HTML beginners. Understanding this vocabulary will help you communicate effectively about web development and understand technical documentation.</p>
+
+            <dl class="glossary-list">
+                <dt>Attribute</dt>
+                <dd>Additional information provided within an HTML tag that modifies the element's behavior or appearance. Example: <code>src="image.jpg"</code> in an img tag.</dd>
+
+                <dt>Block Element</dt>
+                <dd>HTML elements that take up the full width available and create new lines before and after themselves. Examples: &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;.</dd>
+
+                <dt>Element</dt>
+                <dd>A complete HTML component consisting of an opening tag, content, and closing tag. Example: <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>.</dd>
+
+                <dt>HTML (HyperText Markup Language)</dt>
+                <dd>The standard markup language used to create web pages. It describes the structure and content of web documents using tags and elements.</dd>
+
+                <dt>Inline Element</dt>
+                <dd>HTML elements that only take up as much width as necessary and do not create line breaks. Examples: &lt;span&gt;, &lt;strong&gt;, &lt;em&gt;.</dd>
+
+                <dt>Nesting</dt>
+                <dd>Placing HTML elements inside other elements. Proper nesting requires that inner elements are completely contained within outer elements.</dd>
+
+                <dt>Semantic HTML</dt>
+                <dd>Using HTML elements that clearly describe their meaning and purpose rather than just their appearance. Example: using &lt;header&gt; instead of &lt;div&gt; for page headers.</dd>
+
+                <dt>Tag</dt>
+                <dd>The markup code that defines an HTML element. Tags are enclosed in angle brackets and usually come in pairs: opening tag &lt;p&gt; and closing tag &lt;/p&gt;.</dd>
+
+                <dt>Validation</dt>
+                <dd>The process of checking HTML code against official standards to ensure it follows proper syntax and structure rules.</dd>
+
+                <dt>W3C (World Wide Web Consortium)</dt>
+                <dd>The international organization that develops web standards, including HTML specifications and accessibility guidelines.</dd>
+            </dl>
+
+            <h2 id="checklist">Assignment Submission Checklist</h2>
+            <p>Use this checklist before submitting HTML assignments to ensure your work meets academic standards and functions properly across different browsers and devices.</p>
+
+            <div class="checklist-section">
+                <h3>Code Quality and Structure</h3>
+                <ul class="checklist">
+                    <li>□ Document includes proper DOCTYPE declaration</li>
+                    <li>□ HTML element includes lang attribute</li>
+                    <li>□ Head section contains charset meta tag</li>
+                    <li>□ Head section contains viewport meta tag for responsive design</li>
+                    <li>□ Page has descriptive title tag</li>
+                    <li>□ All opening tags have corresponding closing tags</li>
+                    <li>□ Elements are properly nested (no overlapping tags)</li>
+                    <li>□ Code uses consistent indentation for readability</li>
+                    <li>□ All tag names and attributes are lowercase</li>
+                    <li>□ All attribute values are enclosed in quotes</li>
+                </ul>
+
+                <h3>Content and Semantics</h3>
+                <ul class="checklist">
+                    <li>□ Heading hierarchy follows logical order (H1 → H2 → H3)</li>
+                    <li>□ Only one H1 element per page</li>
+                    <li>□ Semantic elements used appropriately (&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;)</li>
+                    <li>□ Text content uses appropriate elements (&lt;p&gt; for paragraphs, &lt;strong&gt; for emphasis)</li>
+                    <li>□ Lists use proper list elements (&lt;ul&gt; or &lt;ol&gt; with &lt;li&gt;)</li>
+                    <li>□ Tables include proper headers (&lt;th&gt;) and structure (&lt;thead&gt;, &lt;tbody&gt;)</li>
+                </ul>
+
+                <h3>Links and Media</h3>
+                <ul class="checklist">
+                    <li>□ All links have descriptive link text (avoid "click here")</li>
+                    <li>□ External links open in new tabs if appropriate</li>
+                    <li>□ All file paths are correct and functional</li>
+                    <li>□ All images include descriptive alt text</li>
+                    <li>□ Image file names are descriptive and web-friendly</li>
+                    <li>□ Media files are optimized for web use</li>
+                </ul>
+
+                <h3>Forms and Interactivity</h3>
+                <ul class="checklist">
+                    <li>□ All form inputs have associated labels</li>
+                    <li>□ Labels use "for" attribute matching input "id"</li>
+                    <li>□ Required fields are marked as required</li>
+                    <li>□ Form includes submit button</li>
+                    <li>□ Form action and method attributes are specified if needed</li>
+                </ul>
+
+                <h3>Accessibility and Standards</h3>
+                <ul class="checklist">
+                    <li>□ HTML passes W3C validation without errors</li>
+                    <li>□ Page passes WAVE accessibility check</li>
+                    <li>□ Color contrast meets accessibility standards</li>
+                    <li>□ Page is navigable using only keyboard</li>
+                    <li>□ Screen reader testing completed or simulated</li>
+                </ul>
+
+                <h3>Testing and Compatibility</h3>
+                <ul class="checklist">
+                    <li>□ Page displays correctly in multiple browsers (Chrome, Firefox, Safari)</li>
+                    <li>□ Page is responsive on mobile devices</li>
+                    <li>□ All links work and lead to correct destinations</li>
+                    <li>□ Page loads completely without broken images or missing files</li>
+                    <li>□ Console shows no JavaScript errors (press F12 to check)</li>
+                </ul>
+
+                <h3>Assignment Requirements</h3>
+                <ul class="checklist">
+                    <li>□ All assignment requirements have been met</li>
+                    <li>□ File naming follows instructor guidelines</li>
+                    <li>□ Required elements are included as specified</li>
+                    <li>□ Content meets minimum/maximum length requirements</li>
+                    <li>□ Submission includes all required files</li>
+                    <li>□ Work is original and properly attributed if using external sources</li>
+                </ul>
+            </div>
+
+            <div class="study-tip-section">
+                <h2>Study Tips for HTML Success</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3>Practice Regularly</h3>
+                        <ul>
+                            <li>Code for at least 30 minutes daily</li>
+                            <li>Build small projects to reinforce concepts</li>
+                            <li>Recreate layouts from websites you admire</li>
+                            <li>Use online coding challenges and exercises</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Learn from Mistakes</h3>
+                        <ul>
+                            <li>Keep a log of common errors you make</li>
+                            <li>Understand why validation errors occur</li>
+                            <li>Practice fixing broken HTML code</li>
+                            <li>Ask questions when stuck rather than guessing</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Build Good Habits</h3>
+                        <ul>
+                            <li>Always validate your HTML before submission</li>
+                            <li>Use consistent code formatting and indentation</li>
+                            <li>Comment your code to explain complex sections</li>
+                            <li>Test across multiple browsers and devices</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Stay Current</h3>
+                        <ul>
+                            <li>Follow web development news and updates</li>
+                            <li>Learn about accessibility best practices</li>
+                            <li>Understand mobile-first design principles</li>
+                            <li>Keep up with new HTML features and standards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/html-reference">HTML Reference</a>
+                <a href="/resources">Resources</a>
+                <a href="/study-tools">Study Tools</a>
+                <a href="/help-faq">Help & FAQ</a>
+            </div>
+            <div class="footer-info">
+                <p>Created for beginner web developers | <a href="mailto:support@htmlguide.edu">Contact Support</a></p>
+                <p>Last updated: December 11, 2025 | <a href="#top">Back to top</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

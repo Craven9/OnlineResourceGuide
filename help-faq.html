@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & FAQ - HTML Guide for Beginners</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">
+                <h1>HTML Guide for Beginners</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/html-reference">HTML Quick Reference</a></li>
+                <li><a href="/resources">Six Essential Resources</a></li>
+                <li><a href="/study-tools">Study Tools</a></li>
+                <li><a href="/help-faq" class="active" aria-current="page">Help & FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Help & FAQ</h1>
+            <p class="hero-subtitle">Solutions to common HTML problems and frequently asked questions for beginning web developers.</p>
+        </section>
+
+        <section class="content">
+            <h2>Frequently Asked Questions</h2>
+            <p>These questions represent the most common confusion points encountered by students learning HTML in academic settings. Each answer provides practical guidance for coursework success.</p>
+
+            <div class="faq-list">
+                <article class="faq-item">
+                    <h3>Why is my image not showing up on my webpage?</h3>
+                    <div class="faq-answer">
+                        <p>Image display problems usually stem from incorrect file paths, missing alt attributes, or file naming issues. Follow this debugging process:</p>
+                        <ol>
+                            <li><strong>Check the file path:</strong> Ensure the src attribute points to the correct location. Use relative paths for images in your project folder.</li>
+                            <li><strong>Verify file names:</strong> File names are case-sensitive. "Image.jpg" is different from "image.jpg".</li>
+                            <li><strong>Confirm file format:</strong> Use web-compatible formats (JPG, PNG, GIF, WebP).</li>
+                            <li><strong>Test file accessibility:</strong> Make sure the image file exists in the specified location.</li>
+                        </ol>
+                        <div class="code-example">
+                            <h4>Correct image syntax:</h4>
+                            <pre><code>&lt;img src="images/photo.jpg" alt="Students working in library"&gt;</code></pre>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>What's the difference between relative and absolute paths?</h3>
+                    <div class="faq-answer">
+                        <p>Path types determine how browsers locate linked files and affect whether your site works when moved between servers or viewed locally.</p>
+                        <ul>
+                            <li><strong>Relative paths</strong> describe file locations relative to the current page location. Use these for files within your project.</li>
+                            <li><strong>Absolute paths</strong> provide the complete URL including domain name. Use these for external resources.</li>
+                        </ul>
+                        <div class="code-example">
+                            <h4>Path examples:</h4>
+                            <pre><code>&lt;!-- Relative paths (recommended for your project files) --&gt;
+&lt;img src="photo.jpg"&gt; &lt;!-- Same folder --&gt;
+&lt;img src="images/photo.jpg"&gt; &lt;!-- Subfolder --&gt;
+&lt;img src="../photo.jpg"&gt; &lt;!-- Parent folder --&gt;
+
+&lt;!-- Absolute paths (for external resources) --&gt;
+&lt;img src="https://example.com/photo.jpg"&gt;</code></pre>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>How do I fix "missing closing tag" errors?</h3>
+                    <div class="faq-answer">
+                        <p>Missing closing tags create validation errors and display problems. Use these strategies to prevent and fix them:</p>
+                        <ul>
+                            <li><strong>Write closing tags immediately:</strong> When you type an opening tag, add the closing tag before adding content.</li>
+                            <li><strong>Use proper indentation:</strong> Indent nested elements to visualize tag relationships.</li>
+                            <li><strong>Use a code editor:</strong> Modern editors highlight matching tags and detect missing closers.</li>
+                            <li><strong>Validate frequently:</strong> Use W3C validator to catch errors early.</li>
+                        </ul>
+                        <div class="code-example">
+                            <h4>Common missing tag scenarios:</h4>
+                            <pre><code>&lt;!-- Wrong: Missing closing tags --&gt;
+&lt;p&gt;This paragraph is missing its closing tag
+&lt;div&gt;This div needs to be closed
+
+&lt;!-- Correct: Properly closed tags --&gt;
+&lt;p&gt;This paragraph is properly closed&lt;/p&gt;
+&lt;div&gt;This div is properly closed&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>When should I use &lt;div&gt; versus semantic elements like &lt;section&gt;?</h3>
+                    <div class="faq-answer">
+                        <p>Choose elements based on meaning rather than appearance. Semantic elements improve accessibility and code maintainability for academic and professional projects.</p>
+                        <ul>
+                            <li><strong>Use semantic elements first:</strong> &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, &lt;footer&gt;</li>
+                            <li><strong>Use &lt;div&gt; for styling:</strong> When you need a container purely for CSS styling or JavaScript targeting</li>
+                            <li><strong>Consider screen readers:</strong> Semantic elements help assistive technology understand page structure</li>
+                        </ul>
+                        <div class="code-example">
+                            <h4>Semantic vs. generic elements:</h4>
+                            <pre><code>&lt;!-- Better: Semantic HTML --&gt;
+&lt;article&gt;
+  &lt;header&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+  &lt;/header&gt;
+  &lt;section&gt;
+    &lt;p&gt;Article content...&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
+
+&lt;!-- Less ideal: Generic divs --&gt;
+&lt;div class="article"&gt;
+  &lt;div class="header"&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;div class="content"&gt;
+    &lt;p&gt;Article content...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>Why won't my HTML page display properly on mobile devices?</h3>
+                    <div class="faq-answer">
+                        <p>Mobile display issues often result from missing viewport meta tags or CSS problems. The HTML foundation requires proper responsive setup.</p>
+                        <div class="code-example">
+                            <h4>Essential mobile-friendly HTML setup:</h4>
+                            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+                        </div>
+                        <p>The viewport meta tag tells mobile browsers how to scale and display your page. Without it, mobile devices display your page at desktop width and scale it down, making text tiny and unreadable.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>How do I make my links accessible to screen readers?</h3>
+                    <div class="faq-answer">
+                        <p>Accessible links require descriptive text that makes sense when read out of context by screen reading software.</p>
+                        <ul>
+                            <li><strong>Use descriptive link text:</strong> Avoid generic phrases like "click here" or "read more"</li>
+                            <li><strong>Make links self-explanatory:</strong> Link text should describe the destination or purpose</li>
+                            <li><strong>Use title attributes sparingly:</strong> Only when additional context is needed</li>
+                        </ul>
+                        <div class="code-example">
+                            <h4>Accessible link examples:</h4>
+                            <pre><code>&lt;!-- Poor accessibility --&gt;
+&lt;a href="report.pdf"&gt;Click here&lt;/a&gt;
+&lt;a href="contact.html"&gt;Read more&lt;/a&gt;
+
+&lt;!-- Better accessibility --&gt;
+&lt;a href="report.pdf"&gt;Download annual budget report (PDF)&lt;/a&gt;
+&lt;a href="contact.html"&gt;Contact information and office hours&lt;/a&gt;</code></pre>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>What's the difference between &lt;strong&gt; and &lt;b&gt;, or &lt;em&gt; and &lt;i&gt;?</h3>
+                    <div class="faq-answer">
+                        <p>Choose elements based on meaning (semantic) rather than appearance. This improves accessibility and follows current web standards expected in academic work.</p>
+                        <ul>
+                            <li><strong>&lt;strong&gt;</strong> indicates important content with semantic meaning</li>
+                            <li><strong>&lt;b&gt;</strong> applies bold styling without semantic importance</li>
+                            <li><strong>&lt;em&gt;</strong> provides emphasis that affects pronunciation/meaning</li>
+                            <li><strong>&lt;i&gt;</strong> applies italic styling without emphasis</li>
+                        </ul>
+                        <div class="code-example">
+                            <h4>Semantic vs. presentational elements:</h4>
+                            <pre><code>&lt;!-- Semantic (recommended) --&gt;
+&lt;p&gt;&lt;strong&gt;Warning:&lt;/strong&gt; This action cannot be undone.&lt;/p&gt;
+&lt;p&gt;The word &lt;em&gt;emphasis&lt;/em&gt; changes the meaning here.&lt;/p&gt;
+
+&lt;!-- Presentational (use with CSS instead) --&gt;
+&lt;p&gt;&lt;b&gt;Warning:&lt;/b&gt; This action cannot be undone.&lt;/p&gt;
+&lt;p&gt;The word &lt;i&gt;emphasis&lt;/i&gt; is just italic here.&lt;/p&gt;</code></pre>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>How do I create a navigation menu that works properly?</h3>
+                    <div class="faq-answer">
+                        <p>Proper navigation requires semantic HTML structure that supports both visual design and accessibility requirements for coursework.</p>
+                        <div class="code-example">
+                            <h4>Semantic navigation structure:</h4>
+                            <pre><code>&lt;nav aria-label="Main navigation"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="services.html"&gt;Services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                        </div>
+                        <p>Key elements: &lt;nav&gt; element identifies navigation landmarks, &lt;ul&gt;/&lt;li&gt; structure creates logical grouping, aria-label provides context for screen readers, and descriptive link text explains each destination.</p>
+                    </div>
+                </article>
+            </div>
+
+            <h2>Troubleshooting Common Errors</h2>
+            <p>Use these diagnostic steps when encountering problems with your HTML assignments. Most issues fall into these categories with straightforward solutions.</p>
+
+            <div class="troubleshooting-section">
+                <h3>Page Won't Load or Displays Incorrectly</h3>
+                <ol class="troubleshooting-steps">
+                    <li><strong>Check file extensions:</strong> HTML files must end with .html or .htm</li>
+                    <li><strong>Verify file location:</strong> Ensure the file is in the correct directory</li>
+                    <li><strong>Test in different browsers:</strong> Problems in one browser may indicate specific compatibility issues</li>
+                    <li><strong>Clear browser cache:</strong> Old cached files can prevent updates from showing</li>
+                    <li><strong>Check for typos:</strong> Review file names and paths for spelling errors</li>
+                </ol>
+
+                <h3>Validation Errors</h3>
+                <ol class="troubleshooting-steps">
+                    <li><strong>Start with the first error:</strong> Fixing early errors often resolves subsequent ones</li>
+                    <li><strong>Check tag pairing:</strong> Every opening tag needs a corresponding closing tag</li>
+                    <li><strong>Verify attribute syntax:</strong> Ensure attribute values are quoted properly</li>
+                    <li><strong>Review nesting:</strong> Elements must be properly nested without overlap</li>
+                    <li><strong>Confirm DOCTYPE:</strong> Every HTML5 document needs &lt;!DOCTYPE html&gt;</li>
+                </ol>
+
+                <h3>Links Not Working</h3>
+                <ol class="troubleshooting-steps">
+                    <li><strong>Test file paths:</strong> Verify linked files exist at specified locations</li>
+                    <li><strong>Check case sensitivity:</strong> File names must match exactly including capitalization</li>
+                    <li><strong>Review href attributes:</strong> Ensure proper URL format for external links</li>
+                    <li><strong>Test anchor links:</strong> Verify target elements have matching id attributes</li>
+                    <li><strong>Remove special characters:</strong> Avoid spaces and unusual characters in file names</li>
+                </ol>
+
+                <h3>Accessibility Issues</h3>
+                <ol class="troubleshooting-steps">
+                    <li><strong>Add alt text:</strong> Every image needs descriptive alternative text</li>
+                    <li><strong>Check heading hierarchy:</strong> Use proper H1-H6 progression without skipping levels</li>
+                    <li><strong>Label form elements:</strong> Connect every input with an appropriate label</li>
+                    <li><strong>Test keyboard navigation:</strong> Ensure all interactive elements are accessible via keyboard</li>
+                    <li><strong>Review color contrast:</strong> Text must be readable against background colors</li>
+                </ol>
+            </div>
+
+            <h2>Getting Additional Help</h2>
+            <p>When these resources don't resolve your problem, use these strategies to find solutions and continue learning effectively.</p>
+
+            <div class="help-resources">
+                <div class="help-section">
+                    <h3>Academic Support</h3>
+                    <ul>
+                        <li>Contact your instructor during office hours for assignment-specific guidance</li>
+                        <li>Form study groups with classmates to work through challenges together</li>
+                        <li>Visit campus tutoring centers for additional HTML/web development support</li>
+                        <li>Use instructor-provided forums or discussion boards for course-related questions</li>
+                    </ul>
+                </div>
+
+                <div class="help-section">
+                    <h3>Online Communities</h3>
+                    <ul>
+                        <li>Search Stack Overflow for specific error messages or problems</li>
+                        <li>Browse beginner-friendly communities like freeCodeCamp forum</li>
+                        <li>Watch video tutorials on YouTube for visual learning</li>
+                        <li>Join Reddit communities like r/webdev or r/HTML for peer support</li>
+                    </ul>
+                </div>
+
+                <div class="help-section">
+                    <h3>Professional Resources</h3>
+                    <ul>
+                        <li>Consult MDN Web Docs for authoritative technical information</li>
+                        <li>Use W3C specifications for definitive HTML standards</li>
+                        <li>Access browser developer tools for debugging assistance</li>
+                        <li>Try online code validators to identify syntax problems</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Preventing Future Problems</h2>
+            <p>Adopt these practices to reduce errors and improve your HTML development workflow for both academic and future professional work.</p>
+
+            <div class="prevention-tips">
+                <div class="tip-category">
+                    <h3>Development Habits</h3>
+                    <ul>
+                        <li>Use a consistent file and folder naming convention</li>
+                        <li>Validate your HTML frequently during development, not just before submission</li>
+                        <li>Test your pages in multiple browsers throughout the development process</li>
+                        <li>Save and backup your work regularly to prevent data loss</li>
+                    </ul>
+                </div>
+
+                <div class="tip-category">
+                    <h3>Code Organization</h3>
+                    <ul>
+                        <li>Use consistent indentation to make code structure visible</li>
+                        <li>Add comments to explain complex or important sections</li>
+                        <li>Group related files in organized folder structures</li>
+                        <li>Follow naming conventions for classes, IDs, and file names</li>
+                    </ul>
+                </div>
+
+                <div class="tip-category">
+                    <h3>Learning Strategies</h3>
+                    <ul>
+                        <li>Practice coding regularly rather than cramming before assignments</li>
+                        <li>Build small projects to reinforce concepts from class</li>
+                        <li>Keep notes about errors you encounter and their solutions</li>
+                        <li>Stay current with HTML best practices and new features</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/html-reference">HTML Reference</a>
+                <a href="/resources">Resources</a>
+                <a href="/study-tools">Study Tools</a>
+                <a href="/help-faq">Help & FAQ</a>
+            </div>
+            <div class="footer-info">
+                <p>Created for beginner web developers | <a href="mailto:support@htmlguide.edu">Contact Support</a></p>
+                <p>Last updated: December 11, 2025 | <a href="#top">Back to top</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

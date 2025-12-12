@@ -35,19 +35,24 @@ app.get('/', (req, res) => {
 });
 
 // Routes for each page
-app.get('/tags-reference', (req, res) => {
-  console.log('Serving tags-reference page');
-  res.sendFile(join(__dirname, 'tags-reference.html'));
-});
-
-app.get('/examples', (req, res) => {
-  console.log('Serving examples page');
-  res.sendFile(join(__dirname, 'examples.html'));
+app.get('/html-reference', (req, res) => {
+  console.log('Serving HTML reference page');
+  res.sendFile(join(__dirname, 'html-reference.html'));
 });
 
 app.get('/resources', (req, res) => {
   console.log('Serving resources page');
   res.sendFile(join(__dirname, 'resources.html'));
+});
+
+app.get('/study-tools', (req, res) => {
+  console.log('Serving study tools page');
+  res.sendFile(join(__dirname, 'study-tools.html'));
+});
+
+app.get('/help-faq', (req, res) => {
+  console.log('Serving help FAQ page');
+  res.sendFile(join(__dirname, 'help-faq.html'));
 });
 
 // Fallback for any other routes - redirect to home
