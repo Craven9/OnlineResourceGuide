@@ -1882,6 +1882,67 @@ html {
     border: none;
 }
 
+/* Enhanced Tips Section */
+.tips-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid #dee2e6;
+}
+
+.tips-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tip-card-enhanced {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.tip-card-enhanced:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.tip-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.tip-card-enhanced h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.tip-card-enhanced ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tip-card-enhanced li {
+    margin-bottom: 0.75rem;
+    padding-left: 0;
+    color: #495057;
+    line-height: 1.5;
+}
+
+.tip-card-enhanced strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
 /* Tool Cards */
 .tools-grid {
     display: grid;
