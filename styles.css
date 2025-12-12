@@ -446,13 +446,11 @@ pre::before {
 
 code {
     font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
-    background: var(--gray-100);
     color: var(--primary-sage);
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     font-size: 0.9rem;
     font-weight: 600;
-    border: 1px solid var(--gray-200);
 }
 
 pre code {
@@ -1735,7 +1733,6 @@ html {
 .faq-question {
     background: linear-gradient(135deg, var(--primary-sage) 0%, var(--primary-sage-dark) 100%);
     padding: 1.5rem 2rem;
-    border-bottom: 1px solid var(--gray-200);
 }
 
 .faq-question h3 {
