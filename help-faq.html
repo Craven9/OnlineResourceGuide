@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#navigation" class="skip-link">Skip to navigation</a>
+    
+    <header role="banner">
+        <nav aria-label="Main navigation" id="navigation" role="navigation">
             <div class="logo">
                 <h1>HTML Guide for Beginners</h1>
             </div>
@@ -22,16 +26,16 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Help & FAQ</h1>
+    <main role="main" id="main-content">
+        <section class="hero" aria-labelledby="main-heading">
+            <h1 id="main-heading">Help & FAQ</h1>
         </section>
 
-        <section class="content">
-            <h2>Frequently Asked Questions</h2>
+        <section class="content" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
             <p>These questions represent the most common confusion points encountered by students learning HTML in academic settings. Each answer provides practical guidance for coursework success.</p>
 
-            <div class="faq-list">
+            <div class="faq-list" role="region" aria-labelledby="faq-heading">
                 <article class="faq-item">
                     <div class="faq-question">
                         <h3>Why is my image not showing up on my webpage?</h3>
@@ -339,7 +343,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo" aria-label="Site footer">
         <div class="footer-content">
             <div class="footer-nav">
                 <a href="/">Home</a>

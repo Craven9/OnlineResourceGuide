@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#navigation" class="skip-link">Skip to navigation</a>
+    
+    <header role="banner">
+        <nav aria-label="Main navigation" id="navigation" role="navigation">
             <div class="logo">
                 <h1>HTML Guide for Beginners</h1>
             </div>
@@ -22,9 +26,9 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>HTML Cheat Sheet and Resource Guide for Beginner Web Developers</h1>
+    <main role="main" id="main-content">
+        <section class="hero" aria-labelledby="main-heading">
+            <h1 id="main-heading">HTML Cheat Sheet and Resource Guide for Beginner Web Developers</h1>
             <div class="cta-buttons">
                 <a href="#whats-in-guide" class="cta-primary">Start Learning</a>
                 <a href="/html-reference" class="cta-secondary">Quick Reference</a>
@@ -86,10 +90,10 @@
             </div>
 
             <h2 id="table-of-contents">Table of Contents</h2>
-            <div class="toc-container">
+            <div class="toc-container" role="navigation" aria-labelledby="table-of-contents">
                 <div class="toc-column">
                     <h3>Getting Started</h3>
-                    <ul>
+                    <ul role="list">
                         <li><a href="#whats-in-guide">What's in the Guide</a></li>
                         <li><a href="#who-guide-for">Who the Guide is for</a></li>
                         <li><a href="#what-guide-assumes">What the Guide assumes users know</a></li>
@@ -136,7 +140,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo" aria-label="Site footer">
         <div class="footer-content">
             <div class="footer-nav">
                 <a href="/">Home</a>

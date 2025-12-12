@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#navigation" class="skip-link">Skip to navigation</a>
+    
+    <header role="banner">
+        <nav aria-label="Main navigation" id="navigation" role="navigation">
             <div class="logo">
                 <h1>HTML Guide for Beginners</h1>
             </div>
@@ -22,9 +26,9 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Study Tools</h1>
+    <main role="main" id="main-content">
+        <section class="hero" aria-labelledby="main-heading">
+            <h1 id="main-heading">Study Tools</h1>
         </section>
 
         <section class="content">
@@ -291,7 +295,7 @@ lang="language-code"</code></pre>
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo" aria-label="Site footer">
         <div class="footer-content">
             <div class="footer-nav">
                 <a href="/">Home</a>

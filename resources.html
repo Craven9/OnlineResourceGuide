@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#navigation" class="skip-link">Skip to navigation</a>
+    
+    <header role="banner">
+        <nav aria-label="Main navigation" id="navigation" role="navigation">
             <div class="logo">
                 <h1>HTML Guide for Beginners</h1>
             </div>
@@ -22,26 +26,24 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Resources</h1>
+    <main role="main" id="main-content">
+        <section class="hero" aria-labelledby="main-heading">
+            <h1 id="main-heading">Resources</h1>
         </section>
 
-        <section class="content">
-            <h2>About These Resources</h2>
+        <section class="content" aria-labelledby="about-resources">
+            <h2 id="about-resources">About These Resources</h2>
             <p>These six resources have been selected specifically for beginning HTML students based on their accuracy, beginner-friendly presentation, comprehensive coverage, and proven usefulness in academic contexts. Each resource serves a distinct purpose in your learning process, from official documentation to hands-on practice environments.</p>
 
             <p>The resources are organized by function to help you choose the right tool for your current need: official standards documentation, interactive learning, code validation, accessibility testing, community support, and comprehensive tutorials. Quality criteria include technical accuracy, unbiased presentation, appropriate complexity level for beginners, current maintenance, and clear presentation.</p>
 
-
-
-            <div class="resource-list">
-                <div class="resource-card">
-                    <article class="resource-item">
+            <div class="resource-list" role="list" aria-label="Six essential web development resources">
+                <div class="resource-card" role="listitem">
+                    <article class="resource-item" aria-labelledby="mdn-heading">
                     <header class="resource-header">
-                        <h2>MDN Web Docs - HTML Basics</h2>
+                        <h2 id="mdn-heading">MDN Web Docs - HTML Basics</h2>
                         <div class="resource-meta">
-                            <span class="resource-url"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="_blank">https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML</a></span>
+                            <span class="resource-url"><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="_blank" rel="noopener noreferrer" aria-label="MDN Web Docs - HTML Basics (opens in new tab)">https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML</a></span>
                         </div>
                     </header>
                     
@@ -230,7 +232,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo" aria-label="Site footer">
         <div class="footer-content">
             <div class="footer-nav">
                 <a href="/">Home</a>
