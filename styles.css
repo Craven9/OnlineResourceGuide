@@ -713,42 +713,131 @@ pre code {
 }
 
 /* Resources Styles */
-.resource-category {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    border-left: 4px solid #4CAF50;
-}
-
-.resource-category h4 {
-    color: #4CAF50;
-    margin-bottom: 1rem;
-}
-
 .resource-list {
-    list-style: none;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
-.resource-list li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #e0e0e0;
+.resource-card {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-200);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
 }
 
-.resource-list li:last-child {
-    border-bottom: none;
+.resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-sage);
 }
 
-.resource-list a {
-    color: #333;
+.resource-item {
+    padding: 2rem;
+}
+
+.resource-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--gray-100);
+}
+
+.resource-header h2 {
+    color: var(--primary-sage);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.resource-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.resource-url a {
+    color: var(--accent-soft-blue);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.25rem 0;
+    display: inline-block;
+    transition: color 0.3s ease;
 }
 
-.resource-list a:hover {
-    color: #4CAF50;
+.resource-url a:hover {
+    color: var(--primary-sage-dark);
     text-decoration: underline;
+}
+
+.resource-content {
+    line-height: 1.7;
+}
+
+.resource-content h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.75rem 0 0.75rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.resource-content h3:first-child {
+    margin-top: 0;
+}
+
+.resource-content p {
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.resource-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Enhance code snippets in resources */
+.resource-content code {
+    background: var(--gray-100);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9em;
+    color: var(--text-primary);
+}
+
+/* Resource summary section */
+.resource-summary {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--gray-50) 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 3rem 0 2rem 0;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-md);
+}
+
+.resource-summary h2 {
+    color: var(--primary-sage);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.resource-summary p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    text-align: justify;
+}
+
+.resource-summary p:last-child {
+    margin-bottom: 0;
 }
 
 /* Back to Top Button */
